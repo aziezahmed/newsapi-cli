@@ -19,6 +19,8 @@ class Headlines(Base):
                     print(json.dumps(article["description"]))
                     print(article["url"])
                     print(" ")
+        else:
+            print("Invalid news source.")
 
 
         
