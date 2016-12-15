@@ -3,7 +3,7 @@ news
 
 Usage:
   news sources
-  news headlines <source>
+  news <source>
   news -h | --help
   news --version
 
@@ -35,6 +35,6 @@ def main():
     if options["sources"]:
       sources = Sources(options)
       sources.run()
-    elif options["headlines"]:
+    elif options["<source>"]:
       headlines = Headlines(options)
       headlines.run()
