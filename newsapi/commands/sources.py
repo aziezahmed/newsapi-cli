@@ -1,18 +1,17 @@
 """The sources command."""
 
-
-import urllib, json
+import requests, json
 
 from .base import Base
 
 class Sources(Base):
 
-    def run(self):
+    def run(self):    	
     	url = "https://newsapi.org/v1/sources"
-    	response = urllib.urlopen(url)
-    	data = json.loads(response.read())
+    	response = requests.get(url)
+    	data = response.json()
     	sources = data["sources"]
     	for source in sources:
-        	print source["id"]
+        	print(source["id"])
         
 
