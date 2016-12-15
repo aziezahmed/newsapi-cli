@@ -28,12 +28,12 @@ class RunTests(Command):
 
     def run(self):
         """Run all tests!"""
-        errno = call(['py.test', '--cov=newsapi', '--cov-report=term-missing'])
+        errno = call(['py.test', '--cov=newsapi-cli', '--cov-report=term-missing'])
         raise SystemExit(errno)
 
 
 setup(
-    name = 'newsapi',
+    name = 'newsapi-cli',
     version = __version__,
     description = 'A newsapi.org command line program in Python.',
     long_description = long_description,
@@ -41,7 +41,7 @@ setup(
     author = 'Aziez Ahmed Chawdhary',
     license = 'UNLICENSE',
     classifiers = [
-        'Intended Audience :: Developers',
+        'Intended Audience :: End Users/Desktop',
         'Topic :: Utilities',
         'License :: Public Domain',
         'Natural Language :: English',
