@@ -40,13 +40,12 @@ news bbc-news
 
 ## Built With
 
-* [<docopt>](http://docopt.org) - To create the command line interface
-* [News API](https://newsapi.org) - To get the news headlines
-
+* [docopt](http://docopt.org)
+* [News API](https://newsapi.org)
 
 ## Authors
 
-* **Aziez Ahmed Chawdhary(https://github.com/aziezahmed)**
+* **[Aziez Ahmed Chawdhary](https://github.com/aziezahmed)**
 
 
 ## License
