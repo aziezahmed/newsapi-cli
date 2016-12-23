@@ -57,7 +57,7 @@ Built With
 Authors
 -------
 
--  **`Aziez Ahmed Chawdhary`_**
+-  `Aziez Ahmed Chawdhary`_
 
 License
 -------
