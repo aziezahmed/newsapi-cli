@@ -51,7 +51,7 @@ Example
 Built With
 ----------
 
--  `docopt`_
+-  `skele-cli`_
 -  `News API`_
 
 Authors
@@ -67,5 +67,5 @@ This project is licensed under the MIT License
 .. _News API: https://newsapi.org
 .. _Python 3: https://www.python.org
 .. _PyPi: https://pypi.python.org/pypi
-.. _docopt: http://docopt.org
+.. _skele-cli: https://github.com/rdegges/skele-cli
 .. _Aziez Ahmed Chawdhary: https://github.com/aziezahmed
