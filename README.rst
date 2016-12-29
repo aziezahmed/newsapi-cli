@@ -19,12 +19,11 @@ Prerequisites
 Installing
 ~~~~~~~~~~
 
-Currently newsapi-cli is not on `PyPi`_ so it requires a manual install.
+Newsapi-cli is on `PyPi`_ so it can be installed with pip.
 
 ::
 
-    git clone https://github.com/aziezahmed/newsapi-cli.git
-    pip3 install -e ./newsapi-cli
+    pip install newsapi-cli
 
 Using newsapi-cli
 -----------------
@@ -42,7 +41,7 @@ Get headlines from a specific source
     news <source>
 
 Example
-~~~~~~~
+-------
 
 ::
 

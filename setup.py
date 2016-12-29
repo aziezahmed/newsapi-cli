@@ -37,7 +37,7 @@ setup(
     version = __version__,
     description = 'A newsapi.org command line program in Python.',
     long_description = long_description,
-    url = 'https://github.com/achawdhary/newsapi-cli',
+    url = 'https://github.com/aziezahmed/newsapi-cli',
     author = 'Aziez Ahmed Chawdhary',
     license = 'UNLICENSE',
     classifiers = [
