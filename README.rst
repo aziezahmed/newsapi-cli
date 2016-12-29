@@ -1,51 +1,40 @@
 newsapi-cli
 ===========
 
-| A command line application for displaying news headlines, written in
-  Python.
-| Makes use of the `News API`_ to get JSON metadata for news headlines.
+*A command line application for displaying news headlines, written in Python.*
 
 Getting Started
 ---------------
 
-These instructions will get you a copy of the project up and running on
-your local machine for development and testing purposes.
-
 Prerequisites
 ~~~~~~~~~~~~~
 
--  `Python 3`_ - Including PIP3
+-  `Python`_ - Including PIP
 
 Installing
 ~~~~~~~~~~
 
 Newsapi-cli is on `PyPi`_ so it can be installed with pip.
 
-::
-
-    pip install newsapi-cli
+    $ pip install newsapi-cli
 
 Using newsapi-cli
------------------
+~~~~~~~~~~~~~~~~~
 
 Display a list of all news sources
 
-::
-
-    news sources
+    $ news sources
 
 Get headlines from a specific source
 
-::
-
-    news <source>
+    $ news <source>
 
 Example
--------
+~~~~~~~
 
-::
+Get news headlines from the bbc-news source.
 
-    news bbc-news
+    $ news bbc-news
 
 Built With
 ----------
