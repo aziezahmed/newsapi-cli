@@ -12,14 +12,14 @@ Options:
   --version                         Show version.
 
 Examples:
-  news hello
+  news bbc-news
+  news ars-technica
 
 Help:
   For help using this tool, please open an issue on the Github repository:
+  https://github.com/aziezahmed/newsapi-cli/
 
 """
-
-from inspect import getmembers, isclass
 
 from docopt import docopt
 
