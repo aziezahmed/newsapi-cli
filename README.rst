@@ -16,22 +16,30 @@ Installing
 
 Newsapi-cli is on `PyPi`_ so it can be installed with pip.
 
+.. code-block:: bash
+
     $ pip install newsapi-cli
 
 Using newsapi-cli
 ~~~~~~~~~~~~~~~~~
 
-Usage:
-  news sources
-  news <source>
-  news -h | --help
-  news --version
+.. code-block:: bash
+
+    Usage:
+      news sources
+      news <source>
+      news -h | --help
+      news --version
 
 Display a list of all news sources
+
+.. code-block:: bash
 
   $ news sources
 
 Get headlines from a specific source
+
+.. code-block:: bash
 
   $ news <source>
 
@@ -39,6 +47,8 @@ Example
 ~~~~~~~
 
 Get news headlines from the bbc-news source.
+
+.. code-block:: bash
 
   $ news bbc-news
 
