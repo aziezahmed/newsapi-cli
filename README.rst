@@ -9,7 +9,7 @@ Getting Started
 Prerequisites
 ~~~~~~~~~~~~~
 
--  `Python`_ - Including PIP
+-  `Python`_
 
 Installing
 ~~~~~~~~~~
@@ -21,20 +21,26 @@ Newsapi-cli is on `PyPi`_ so it can be installed with pip.
 Using newsapi-cli
 ~~~~~~~~~~~~~~~~~
 
+Usage:
+  news sources
+  news <source>
+  news -h | --help
+  news --version
+
 Display a list of all news sources
 
-    $ news sources
+  $ news sources
 
 Get headlines from a specific source
 
-    $ news <source>
+  $ news <source>
 
 Example
 ~~~~~~~
 
 Get news headlines from the bbc-news source.
 
-    $ news bbc-news
+  $ news bbc-news
 
 Built With
 ----------

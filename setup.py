@@ -28,7 +28,7 @@ class RunTests(Command):
 
     def run(self):
         """Run all tests!"""
-        errno = call(['py.test', '--cov=newsapi-cli', '--cov-report=term-missing'])
+        errno = call(['py.test', '--cov=news', '--cov-report=term-missing'])
         raise SystemExit(errno)
 
 
