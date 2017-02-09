@@ -1,6 +1,7 @@
 """The headlines command."""
 
 import requests, json
+from termcolor import colored
 
 from .base import Base
 
@@ -14,10 +15,10 @@ class Headlines(Base):
         if data["status"] != "error":
             articles = data["articles"]
             for article in articles:
-                print(json.dumps(article["title"]))
+                print(colored(json.dumps(article["title"]),'green'))
                 if article["description"] is not None:
                     print(json.dumps(article["description"]))
-                    print(article["url"])
+                    print(colored(article["url"],'yellow'))
                     print(" ")
         else:
             print("Invalid news source.")
