@@ -1,6 +1,8 @@
 newsapi-cli
 ===========
 
+|PyPI version|
+
 *A command line application for displaying news headlines, written in Python.*
 
 Getting Started
@@ -14,7 +16,7 @@ Prerequisites
 Installing
 ~~~~~~~~~~
 
-Newsapi-cli is on `PyPi`_ so it can be installed with pip.
+Newsapi-cli is on PyPI so it can be installed with pip.
 
 .. code-block:: bash
 
@@ -73,3 +75,5 @@ This project is licensed under the MIT License
 .. _PyPi: https://pypi.python.org/pypi
 .. _skele-cli: https://github.com/rdegges/skele-cli
 .. _Aziez Ahmed Chawdhary: https://github.com/aziezahmed
+.. |PyPI version| image:: https://img.shields.io/pypi/v/newsapi-cli.svg
+   :target: https://pypi.python.org/pypi/newsapi-cli
