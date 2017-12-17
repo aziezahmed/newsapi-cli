@@ -30,6 +30,7 @@ Using newsapi-cli
     Usage:
       news sources
       news <source>
+	  news search <keyword>
       news -h | --help
       news --version
 
@@ -44,6 +45,12 @@ Get headlines from a specific source
 .. code-block:: bash
 
   $ news <source>
+  
+Get headlines related to a keyword
+
+.. code-block:: bash
+
+  $ news search <keyword>
 
 Example
 ~~~~~~~
@@ -53,6 +60,12 @@ Get news headlines from the bbc-news source.
 .. code-block:: bash
 
   $ news bbc-news
+  
+Get top headlines about apple.
+
+.. code-block:: bash
+
+  $ news search apple
 
 Built With
 ----------
