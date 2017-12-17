@@ -10,7 +10,7 @@ class Headlines(Base):
 
     def run(self):
         newsSource = self.options["<source>"]
-        url = "https://newsapi.org/v1/articles?apiKey=2ff80ad49a294ffc88827b9f0b47cb6c&source=" + newsSource
+        url = "https://newsapi.org/v2/top-headlines?apiKey=2ff80ad49a294ffc88827b9f0b47cb6c&sources=" + newsSource
         response = requests.get(url)
         data = response.json()
         if data["status"] != "error":
