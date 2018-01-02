@@ -30,7 +30,7 @@ Using newsapi-cli
     Usage:
       news sources
       news <source>
-	  news search <keyword>
+      news search <keyword>
       news -h | --help
       news --version
 
