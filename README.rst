@@ -21,6 +21,12 @@ Newsapi-cli is on PyPI so it can be installed with pip.
 .. code-block:: bash
 
     $ pip install newsapi-cli
+    
+To upgrade use the -U flag.
+
+.. code-block:: bash
+
+    $ pip install -U newsapi-cli
 
 Using newsapi-cli
 ~~~~~~~~~~~~~~~~~
