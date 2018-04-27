@@ -3,14 +3,14 @@
 import requests, json
 from termcolor import colored
 from unidecode import unidecode
-
+from . import __api_key__ as API_KEY
 from .base import Base
 
 class Search(Base):
 
     def run(self):
         keyword = self.options["<keyword>"]
-        url = "https://newsapi.org/v2/top-headlines?apiKey=2ff80ad49a294ffc88827b9f0b47cb6c&q=" + keyword
+        url = "https://newsapi.org/v2/top-headlines?apiKey=" + API_KEY + "&q=" + keyword
         response = requests.get(url)
         data = response.json()
         if data["status"] != "error":
