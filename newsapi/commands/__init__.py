@@ -1,4 +1,4 @@
-__api_key__ = 'ADD_YOUR_NEWAPI_API_KEY_HERE'
+__api_key__ = 'API_KEY'
 from .sources import *
 from .headlines import *
 from .search import *
