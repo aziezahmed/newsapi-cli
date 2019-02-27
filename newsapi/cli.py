@@ -15,6 +15,9 @@ Options:
 Examples:
   news bbc-news
   news ars-technica
+  news gb
+  news business
+  news gb/technology
   news search apple
 
 Help:
