@@ -3,7 +3,8 @@
 import requests, json
 from termcolor import colored
 from unidecode import unidecode
-from . import __api_key__ as API_KEY
+
+from newsapi.user_settings import UserSettings
 
 from .base import Base
 
@@ -13,18 +14,22 @@ class Headlines(Base):
     categories = ["business", "entertainment", "general", "health", "science", "sports", "technology"]
 
     def run(self):
+
+        user_settings = UserSettings()
+        api_key = user_settings.get_api_key()
+        
         source = self.options["<source>"]
 
         if source in self.countries:
-            url = "https://newsapi.org/v2/top-headlines?apiKey=" + API_KEY + "&country=" + source
+            url = "https://newsapi.org/v2/top-headlines?apiKey=" + api_key + "&country=" + source
         elif source in self.categories:
-            url = "https://newsapi.org/v2/top-headlines?apiKey=" + API_KEY + "&category=" + source
+            url = "https://newsapi.org/v2/top-headlines?apiKey=" + api_key + "&category=" + source
         elif "/" in source:
             sourceSplit = source.split("/")
             if sourceSplit[0] in self.countries and sourceSplit[1] in self.categories:
-                url = "https://newsapi.org/v2/top-headlines?apiKey=" + API_KEY + "&country=" + sourceSplit[0] + "&category=" + sourceSplit[1]
+                url = "https://newsapi.org/v2/top-headlines?apiKey=" + api_key + "&country=" + sourceSplit[0] + "&category=" + sourceSplit[1]
         else:
-            url = "https://newsapi.org/v2/top-headlines?apiKey=" + API_KEY + "&sources=" + source
+            url = "https://newsapi.org/v2/top-headlines?apiKey=" + api_key + "&sources=" + source
         
 
         if 'url' in vars():

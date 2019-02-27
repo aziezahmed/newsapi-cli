@@ -59,7 +59,7 @@ setup(
     ],
     keywords = ["cli", "news"],
     packages = find_packages(exclude=['docs', 'tests*']),
-    install_requires = ['docopt', 'requests', 'termcolor', 'unidecode'],
+    install_requires = ['docopt', 'requests', 'termcolor', 'unidecode', 'configparser'],
     extras_require = {
         'test': ['coverage', 'pytest', 'pytest-cov'],
     },

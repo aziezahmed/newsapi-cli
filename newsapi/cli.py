@@ -5,6 +5,7 @@ Usage:
   news sources
   news <source>
   news search <keyword>
+  news api <api-key>
   news -h | --help
   news --version
 
@@ -34,15 +35,29 @@ from newsapi.commands import Sources
 from newsapi.commands import Headlines
 from newsapi.commands import Search
 
+from newsapi.user_settings import UserSettings
 
 def main():
+
     """Main CLI entrypoint."""
     options = docopt(__doc__, version=VERSION)
 
-    if options["sources"]:
+    user_settings = UserSettings()
+    api_key = user_settings.get_api_key()
+
+    if api_key == "none" and not options["api"]:
+        print("you need to set your api key first")
+        print("if you don't have one you can get your's free from newsapi.org")
+        print("example:");
+        print("")
+        print("news api 99213MY89API3842KEY0943320900")
+
+    elif options["sources"]:
       sources = Sources(options)
       sources.run()
-    if options["search"]:
+    elif options["api"]:
+      user_settings.set_api_key(options["<api-key>"])
+    elif options["search"]:
       search = Search(options)
       search.run()
     elif options["<source>"]:
