@@ -28,6 +28,21 @@ To upgrade use the -U flag.
 
     $ pip install -U newsapi-cli
 
+Alternatively get the source and install locally.
+
+.. code-block:: bash
+
+    $ pip install -e ./newsapi-cli/
+    
+Adding your API key
+~~~~~~~~~~~~~~~~~~~
+
+To begin you will need to add your API key. If you do not have an API key you can get one free from `News API`_.
+
+.. code-block:: bash
+
+  $ news api YOUR00API00KEY00GOES00HERE
+
 Using newsapi-cli
 ~~~~~~~~~~~~~~~~~
 
@@ -66,7 +81,19 @@ Get news headlines from the bbc-news source.
 .. code-block:: bash
 
   $ news bbc-news
-  
+
+Get top news headlines for Great Britain.
+
+.. code-block:: bash
+
+  $ news gb
+
+Get top business news headlines for Great Britain.
+
+.. code-block:: bash
+
+  $ news gb/business
+
 Get top headlines about apple.
 
 .. code-block:: bash
