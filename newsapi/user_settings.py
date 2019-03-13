@@ -29,7 +29,8 @@ class UserSettings(object):
         self.config.read(self.user_config_path)
 
     def get_api_key(self):
-        return self.config['newsapi-cli']['api-key']
+        NEWSAPI_KEY = os.environ.get("NEWSAPI_KEY", self.config['newsapi-cli']['api-key'])
+        return NEWSAPI_KEY
 
     def set_api_key(self, api_key):
         self.config.set('newsapi-cli','api-key',api_key)
